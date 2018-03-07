@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -202,16 +203,31 @@
                                     </slider>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1va-7P-M20">
+                                <rect key="frame" x="20" y="84" width="374" height="38.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="bIf-8N-b1X">
+                                <rect key="frame" x="20" y="714" width="374" height="2"/>
+                            </progressView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="clE-JL-ck8" firstAttribute="centerY" secondItem="n0G-MB-8jH" secondAttribute="centerY" id="2ua-wS-QM2"/>
                             <constraint firstItem="0uh-sL-B6g" firstAttribute="leading" secondItem="eff-wI-Rj8" secondAttribute="leading" constant="20" id="7me-nr-0oT"/>
+                            <constraint firstItem="1va-7P-M20" firstAttribute="leading" secondItem="eff-wI-Rj8" secondAttribute="leading" constant="20" id="9xB-Br-fld"/>
+                            <constraint firstItem="bIf-8N-b1X" firstAttribute="leading" secondItem="n0G-MB-8jH" secondAttribute="leadingMargin" id="FRb-Ie-dzM"/>
                             <constraint firstItem="1Wo-v6-fDT" firstAttribute="centerY" secondItem="n0G-MB-8jH" secondAttribute="centerY" id="J05-lq-Ebj"/>
+                            <constraint firstAttribute="trailing" secondItem="1va-7P-M20" secondAttribute="trailing" constant="20" id="JRD-AH-oRZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bIf-8N-b1X" secondAttribute="trailing" id="Jlv-LJ-32F"/>
                             <constraint firstItem="eff-wI-Rj8" firstAttribute="trailing" secondItem="0uh-sL-B6g" secondAttribute="trailing" constant="20" id="Jw8-16-5Ha"/>
                             <constraint firstItem="1Wo-v6-fDT" firstAttribute="leading" secondItem="eff-wI-Rj8" secondAttribute="leading" constant="20" id="NAn-Yh-PDq"/>
                             <constraint firstItem="clE-JL-ck8" firstAttribute="leading" secondItem="eff-wI-Rj8" secondAttribute="leading" constant="20" id="RP6-X4-ji4"/>
                             <constraint firstItem="1Wo-v6-fDT" firstAttribute="centerY" secondItem="n0G-MB-8jH" secondAttribute="centerY" id="ZmZ-Ng-dSI"/>
+                            <constraint firstItem="1va-7P-M20" firstAttribute="top" secondItem="eff-wI-Rj8" secondAttribute="top" constant="20" id="n3e-og-g6U"/>
+                            <constraint firstItem="eff-wI-Rj8" firstAttribute="bottom" secondItem="bIf-8N-b1X" secondAttribute="bottom" constant="20" id="ux8-Uy-me6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="eff-wI-Rj8"/>
                         <variation key="default">
@@ -229,7 +245,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zxg-4n-ino" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1554.4000000000001" y="133.5832083958021"/>
+            <point key="canvasLocation" x="1553.6231884057972" y="132.88043478260872"/>
         </scene>
         <!--Results View Controller-->
         <scene sceneID="yFc-d0-TsJ">
