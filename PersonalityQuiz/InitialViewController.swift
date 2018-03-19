@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class InitialViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func beginButtonPushed(_ sender: UIButton) {
-   performSegue(withIdentifier: "resultSegue", sender: nil)
+   performSegue(withIdentifier: "initialSegue", sender: nil)
     }
     
     
